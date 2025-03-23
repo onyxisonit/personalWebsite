@@ -11,25 +11,26 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div className="scroll-smooth">
         <Nav />
-        <div id="home">
-          <Home />
-        </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
-      </div>
+        <main className="">
+          <div id="home">
+            <Home />
+          </div>
+          <div id="about">
+            <About />
+          </div>
+          <div id="projects">
+            <Projects />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
+        </main>
+      </div> 
     </>
   )
 }

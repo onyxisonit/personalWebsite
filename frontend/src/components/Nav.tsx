@@ -13,6 +13,7 @@
 //     );
 // }
 // export default Nav;
+
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; 
 function Nav() {
@@ -21,7 +22,7 @@ function Nav() {
   return (
     <nav className="fixed w-full bg-white shadow-md">
       <div className="flex items-center justify-between p-4">
-        <div className="text-2xl font-bold">My Portfolio</div>
+        <div className="text-2xl font-bold">Nyx</div>
         <div className="hidden md:flex space-x-4">
           <a href="#home" className="hover:text-blue-500">Home</a>
           <a href="#about" className="hover:text-blue-500">About</a>
