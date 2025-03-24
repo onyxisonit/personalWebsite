@@ -20,9 +20,9 @@ function Nav() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-white shadow-md">
+    <nav className="fixed w-full h-16 bg-plum shadow-md">
       <div className="flex items-center justify-between p-4">
-        <div className="text-2xl font-bold">Nyx</div>
+        <div className="text-2xl font-bold">NYX</div>
         <div className="hidden md:flex space-x-4">
           <a href="#home" className="hover:text-blue-500">Home</a>
           <a href="#about" className="hover:text-blue-500">About</a>
