@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import './index.css'
 import Nav from "./components/Nav";
@@ -15,24 +14,20 @@ function App() {
 
   return (
     <>
-      <div className="scroll-smooth">
-        <Nav />
-        <main className="">
-          <div id="home">
-            <Home />
-          </div>
-          <div id="about">
-            <About />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <div id="contact">
-            <Contact />
-          </div>
-        </main>
-        <Footer />
-      </div> 
+      <Router>
+        <div className="scroll-smooth">
+          <Nav />
+        
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+
+          <Footer />
+        </div> 
+      </Router>
     </>
   )
 }

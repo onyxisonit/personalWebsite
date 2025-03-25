@@ -1,6 +1,6 @@
 function Projects(){
     return(
-        <section id="projects" className="min-h-screen bg-gray-100 scroll-mt-20 pt-12">
+        <section className="min-h-screen bg-gray-100 scroll-mt-20 pt-12">
         <header className=" flex items-center justify-center py-10">
             <h1 className="text-3xl">Projects</h1>
         </header>

@@ -1,4 +1,4 @@
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 // function Nav() {
 //     return (
@@ -20,14 +20,14 @@ function Nav() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full h-16 bg-plum shadow-md">
+    <nav className="fixed w-full h-16 bg-plum text-white font-display shadow-md">
       <div className="flex items-center justify-between p-4">
         <div className="text-2xl font-bold">NYX</div>
         <div className="hidden md:flex space-x-4">
-          <a href="#home" className="hover:text-blue-500">Home</a>
-          <a href="#about" className="hover:text-blue-500">About</a>
-          <a href="#projects" className="hover:text-blue-500">Projects</a>
-          <a href="#contact" className="hover:text-blue-500">Contact</a>
+          <Link to="/" className="hover:text-terracota">Home</Link>
+          <Link to="/about" className="hover:text-terracota">About</Link>
+          <Link to="/projects" className="hover:text-terracota">Projects</Link>
+          <Link to="/contact" className="hover:text-terracota">Contact</Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setNavOpen(!navOpen)}>
@@ -37,10 +37,10 @@ function Nav() {
       </div>
       {navOpen && (
         <div className="md:hidden flex flex-col space-y-2 p-4">
-          <a href="#home" className="hover:text-blue-500">Home</a>
-          <a href="#about" className="hover:text-blue-500">About</a>
-          <a href="#projects" className="hover:text-blue-500">Projects</a>
-          <a href="#contact" className="hover:text-blue-500">Contact</a>
+         <Link to="/" className="hover:text-terracota">Home</Link>
+          <Link to="/about" className="hover:text-terracota">About</Link>
+          <Link to="/projects" className="hover:text-terracota">Projects</Link>
+          <Link to="/contact" className="hover:text-terracota">Contact</Link>
         </div>
       )}
     </nav>
