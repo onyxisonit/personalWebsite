@@ -8,7 +8,26 @@ function About() {
             <p className="max-w-2xl text-center">
                 I am a software engineer with a passion for creating innovative solutions.
             </p>
-            
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <img src="" alt=""></img>
+
+            <p>
+                Outside of work, you can find me:
+            </p>
+            <ul>
+                <li>hiking, in the forest</li>
+                <li>studying the stars above, reading about astronomical events</li>
+                <li>trying new things, arts and crafts, learning new skills (guitar)</li>
+                <li>loving cats</li>
+            </ul>
+
+            <img src="" alt="">My beautiful cat.</img>
+
         </div>
         </section>
     );
