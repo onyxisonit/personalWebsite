@@ -8,6 +8,7 @@ function About() {
             <p className="max-w-2xl text-center">
                 I am a software engineer with a passion for creating innovative solutions.
             </p>
+            
         </div>
         </section>
     );
