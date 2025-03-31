@@ -8,7 +8,7 @@ function About() {
             <p className="max-w-2xl text-center">
                 I am a software engineer with a passion for creating innovative solutions.
             </p>
-            <ul>
+            {/* <ul>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -26,7 +26,7 @@ function About() {
                 <li>loving cats</li>
             </ul>
 
-            <img src="" alt="">My beautiful cat.</img>
+            <img src="" alt="">My beautiful cat.</img> */}
 
         </div>
         </section>

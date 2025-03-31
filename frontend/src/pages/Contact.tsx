@@ -17,6 +17,7 @@ function Contact(){
             <label className="input">
                 <input type="text" placeholder="Name" required/> 
             </label>
+        
             
             <label className="input validator">
                 <input type="email" placeholder="Email" required/>
@@ -24,7 +25,7 @@ function Contact(){
 
             <div className="validator-hint hidden">Please enter valid email address.</div>
 
-            <label className="input">
+            <label className="input p-40">
                 <input type="text" placeholder="Message" required/>
             </label>
         </div>
