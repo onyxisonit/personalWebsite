@@ -23,6 +23,10 @@
   .flip-inner {
     transform-style: preserve-3d; /*keep child elements in 3D*/
   }
+
+  .group-hover:rotate-y-180 {
+    transform: rotateY(180deg);
+  }
   
   .backface-hidden {
     backface-visibility: hidden;
@@ -34,7 +38,4 @@
 
   .transform-style-preserve-3d {
     transform-style: preserve-3d;
-  }
-  .group-hover:rotate-y-180 {
-    transform: rotateY(180deg);
-  }
+  } 
