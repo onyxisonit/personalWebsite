@@ -1,52 +1,26 @@
-function Projects(){
-    return(
-        <section className="min-h-screen bg-gray-100 scroll-mt-20 pt-12">
-        <header className=" flex items-center justify-center py-10">
-            <h1 className="text-3xl">Projects</h1>
-        </header>
-        <div className="w-full flex items-center justify-center mx-4 sm:mx-auto">
-            <div className="grid grid-cols-2 gap-4">
-                <div>
-                    <h4>project 1</h4>
-                    
+import CardGridProjects from "../components/CardGridProjects";
 
-                    <div className="flip-card group w-full h-auto relative">
-                        <div className="flip-inner w-full h-full transition-transform duration-500 group-hover:rotate-y-180 transform-style-preserve-3d overflow:hidden object-contain">
-                    
-                            {/* Front Side */}
-                            <div className="absolute w-full h-full backface-hidden bg-white">
-                                <img
-                                    className="w-full h-full object-contain"
-                                    src="livablestreetslogo.png"
-                                    alt="Livable Streets Alliance logo"
-                                />
-                                
-                            </div>
+function Projects() {
+    
+    return (
+        <>
+            <section className="min-h-screen bg-gray-100 scroll-mt-20 pt-12">
+                <header className="flex items-center justify-center pt-10">
+                    <h1 className="text-3xl font-semibold">Projects</h1>
+                </header>
 
-                            {/* Back Side */}
-                            <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white p-6 flex flex-col justify-center items-center text-center">
-                                <p className="mb-2 text-sm text-gray-700">
-                                    Data analysis of displacement trends and correlations such as __,__,__ using machine learning pipeline workflow for the client LivableStreets Alliance. 
-                                </p>
-                                <a
-                                    href="#"
-                                    className="text-blue-500 hover:underline font-medium"
-                                >
-                                    Explore More →
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+                <p className="max-w-3xl mx-auto text-base/7 text-gray-700 text-center py-10">
+                        Welcome to my collection of projects — each one reflects not only what I’ve built, but what I’ve learned.<br></br>
+                        From data pipelines and full-stack web apps to mobile development and C++ command-line tools, 
+                        I approach every challenge with curiosity and a drive to grow. 
+                        Whether it’s picking up a new language, diving into unfamiliar frameworks, or refining my design thinking, 
+                        I view every project as an opportunity to stretch my skills and deepen my understanding. <br></br>
+                        Enjoy!
+                </p>
 
-                <div>project 2</div>
-                <div>project 3</div>
-                <div>project 4</div>
-
-            </div>
-        </div>
-        </section>
-    );
+                <CardGridProjects />
+            </section>
+        </>
+    )
 }
 export default Projects;

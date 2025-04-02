@@ -1,4 +1,4 @@
-import CardCarousel from "../components/CardCarousel.tsx";
+import CardCarouselProjects from "../components/CardCarouselProjects.tsx";
 
 function Home(){
     return(
@@ -7,7 +7,7 @@ function Home(){
                 <h1 className="text-4xl">Welcome to My Portfolio</h1>
             </section>
             <div className="p-6">
-                <CardCarousel />
+                <CardCarouselProjects />
             </div>
             
         
