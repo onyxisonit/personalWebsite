@@ -4,12 +4,12 @@ function Projects() {
     
     return (
         <>
-            <section className="min-h-screen bg-gray-100 scroll-mt-20 pt-12">
+            <section className="min-h-screen  scroll-mt-20 pt-12">
                 <header className="flex items-center justify-center pt-10">
-                    <h1 className="text-3xl font-semibold">Projects</h1>
+                    <h1 className="text-3xl">Projects</h1>
                 </header>
 
-                <p className="max-w-3xl mx-auto text-base/7 text-gray-700 text-center py-10">
+                <p className="max-w-3xl mx-auto text-base/7 text-center py-10">
                         Welcome to my collection of projects — each one reflects not only what I’ve built, but what I’ve learned.<br></br>
                         From data pipelines and full-stack web apps to mobile development and C++ command-line tools, 
                         I approach every challenge with curiosity and a drive to grow. 

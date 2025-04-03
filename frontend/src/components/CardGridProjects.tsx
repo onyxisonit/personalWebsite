@@ -12,6 +12,7 @@ function CardGridProjects() {
                     <a
                         href="https://www.livablestreets.info"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="hover:underline font-medium"
                     >
                         LivableStreets Alliance
@@ -85,7 +86,7 @@ function CardGridProjects() {
 
                                 {/* Back Side */}
                                 <div className="absolute inset-0 backface-hidden rotate-y-180 bg-white p-4 flex flex-col justify-center items-center text-center overflow-auto">
-                                    <h4 className="font-bold text-base mb-2">{project.title}</h4>
+                                    <h4 className="font-bold text-base text-black mb-2">{project.title}</h4>
                                     <p className="text-sm text-gray-700 mb-3">{project.desc}</p>
                                     <a
                                         href={project.link}

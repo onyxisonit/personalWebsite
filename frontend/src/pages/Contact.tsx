@@ -1,34 +1,82 @@
 function Contact(){
     return(
-        <section className="min-h-screen bg-gray-100 scroll-mt-20 pt-12">
-        <header className=" flex items-center justify-center py-10">
-            <h1 className="text-3xl">Contact</h1>
-        </header>
-        <div className="w-full flex items-center justify-center mx-4 sm:mx-auto">
-           <a href="">LinkedIn</a>
-           <a href="">Github</a>
-           <a href="">Email</a> 
-           {/* figure out how to get email copied to clipboard AND/OR jump to contact form below */}
-        </div>
+        <section className="min-h-screen scroll-mt-20 pt-12">
+            <header className=" flex items-center justify-center py-10">
+                <h1 className="text-3xl">Contact</h1>
+            </header>
 
-        {/* input contact form */}
-        {/* please see dqaisyUI/w3 if you want to add SVG! */}
-        <div>
-            <label className="input">
-                <input type="text" placeholder="Name" required/> 
-            </label>
-        
+            <div className="w-full flex items-center justify-center mx-4 sm:mx-auto">
+                <a href="">LinkedIn</a>
+                <a href="">Github</a>
+                <a href="">Email</a> 
+                {/* figure out how to get email copied to clipboard AND/OR jump to contact form below */}
+            </div>
+
+            {/* input contact form */}
+            {/* please see dqaisyUI/w3 if you want to add SVG! */}
+            {/* <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <label className="input block text-gray-700 text-sm mb-2">
+                    <input type="text" placeholder="Name" required/> 
+                </label>
             
-            <label className="input validator">
-                <input type="email" placeholder="Email" required/>
-            </label>
+                
+                <label className="input validator block text-gray-700 text-sm mb-2">
+                    <input type="email" placeholder="Email" required/>
+                </label>
 
-            <div className="validator-hint hidden">Please enter valid email address.</div>
+                <div className="validator-hint hidden">Please enter valid email address.</div>
 
-            <label className="input p-40">
-                <input type="text" placeholder="Message" required/>
-            </label>
-        </div>
+                <label className="input block text-gray-700 text-sm p-40 mb-2">
+                    <input type="text" placeholder="Message" required/>
+                </label>
+            </form> */}
+            <form className="shadow-md rounded px-12 pt-6 pb-8 mb-4 space-y-4">
+  {/* Name Field */}
+  <div className="form-control">
+    <label className="label">
+      <span className="label-text">Name</span>
+      
+    </label>
+    <input
+      type="text"
+      placeholder="Jo Doe *"
+      className="border-t border-0 focus:outline-none focus:border-blue-500 px-2 py-2 w-full"
+      required
+    />
+  </div>
+
+  {/* Email Field */}
+  <div className="form-control">
+    <label className="label">
+      <span className="label-text">Email</span>
+    </label>
+    <input
+      type="email"
+      placeholder="jodoe@example.com *"
+      className="border-t border-0 focus:outline-none focus:border-blue-500 px-2 py-2 w-full"
+      required
+    />
+  </div>
+
+  {/* Message Field */}
+  <div className="form-control">
+    <label className="label">
+      <span className="label-text">Message</span>
+    </label>
+    <textarea
+      placeholder="Hello Nyx, I would like to... *"
+      className="border-t border-0 focus:outline-none focus:border-blue-500 px-2 py-2 min-h-32 w-full"
+      required
+    ></textarea>
+  </div>
+
+  {/* Submit Button */}
+  <div className="form-control mt-6">
+    <button className="btn btn-wine w-full">Send Message</button>
+  </div>
+</form>
+
+
         </section>
     );
 }
