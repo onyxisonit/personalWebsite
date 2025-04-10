@@ -53,10 +53,12 @@ function Contact(){
     <input
       type="email"
       placeholder="jodoe@example.com *"
-      className="border-t border-0 focus:outline-none focus:border-blue-500 px-2 py-2 w-full"
+      className="validator border-t border-0 focus:outline-none focus:border-blue-500 px-2 py-2 w-full"
       required
     />
+     <div className="validator-hint hidden">Please enter valid email address.</div>
   </div>
+ 
 
   {/* Message Field */}
   <div className="form-control">
