@@ -1,9 +1,9 @@
 function Contact(){
     return(
-        <section className="min-h-screen scroll-mt-20 pt-12">
-            <header className=" flex items-center justify-center py-10">
-                <h1 className="text-3xl">Contact</h1>
-            </header>
+      <section className="min-h-screen bg-terracotaLight text-white pt-12">
+        <header className=" flex items-center justify-center font-display font-bold py-12 mt-14 mx-4 sm:mx-auto">
+            <h1 className="text-9xl text-center font-medium h-1/2 w-full">Let's connect!</h1>
+        </header>
 
             <div className="w-full flex items-center justify-center mx-4 sm:mx-auto">
                 <a href="">LinkedIn</a>

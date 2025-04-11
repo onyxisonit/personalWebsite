@@ -17,12 +17,7 @@ function CardCarousel(){
 
     return(
         <div>
-            <header className="flex items-center justify-center font-display font-bold py-10">
-                <h1 className="text-3xl">Projects</h1>
-            </header>
-        
-
-            <div className="carousel carousel-center bg-wine shadow min-w-full min-h-[400px] overflow-x-auto snap-x snap-mandatory scroll-smooth flex">
+            <div className="carousel carousel-center bg-terracota shadow min-w-full min-h-[400px] overflow-x-auto snap-x snap-mandatory scroll-smooth flex">
 
                 {/* Project 1: LivableStreets: Bike Infrastructure */}
                 <div ref={projectRefs[0]} className="carousel-item w-full md:w-1/2 p-4">
@@ -42,32 +37,27 @@ function CardCarousel(){
 
                             {/* Back Side */}
                             <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white p-6 flex flex-col justify-center items-center text-center">
-                                <section className="text-sm text-gray-700">
+                                <section className="text-md leading-7 text-gray-700">
                                     <p className="mb-2">
-                                        <span className="font-bold">LivableStreets:Bike Infrastructure </span>
-                                        is an extensive 
-                                        <span className="font-bold"> data analysis pipeline </span> 
-                                        to investigate key drivers of
-                                        <span className="font-bold"> displacement trends </span>
-                                        in the Greater Boston area for the nonprofit organization 
-                                        <a href="https://www.livablestreets.info" target="_blank" className=" hover:underline font-medium"> LivableStreets Alliance. </a>
+                                        <b>LivableStreets:Bike Infrastructure </b> <br />
+                                        is an extensive <b>data analysis pipeline</b> using <br />
+                                        <b> machine learning </b> techniques in <b> Python</b> to investigate <br /> key drivers of<b> displacement trends </b> in 
+                                        the Greater Boston for the {" "}
+                                        <a
+                                            href="https://www.livablestreets.info"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:underline font-medium"
+                                        >
+                                            LivableStreets Alliance
+                                        </a>. 
                                     </p>
 
-                                    <p className="mb-2">
-                                        It uses
-                                        <span className="font-bold"> machine learning </span>and 
-                                        <span className="font-bold"> geospatial techniques </span>in 
-                                        <span className="font-bold"> Python </span>
-                                        (including libraries such as
-                                        <span className="font-bold">  numpy, pandas, geopandas, sckit-learn, matplotlib,</span> etc.)
-                                    </p>
                                     <a
-                                        href="https://github.com/BU-Spark/ds-livable-streets-infra/tree/team-c-final"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        href="/projects"
                                         className="text-terracota hover:underline font-medium"
                                     >
-                                        Explore More →
+                                        Explore My Projects →
                                     </a>
                                 </section>
                             </div>
@@ -92,27 +82,19 @@ function CardCarousel(){
 
                             {/* Back Side */}
                             <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white p-6 flex flex-col justify-center items-center text-center">
-                                <section className="text-sm text-gray-700">
+                                <section className="text-md leading-7 text-gray-700">
                                     <p className="mb-2">
-                                        <span className="font-bold">Unwind </span>
-                                        is a mobile wellness app designed with a focus on mindfulness and relaxation in 
-                                        <span className="font-bold"> Kotlin</span>. 
-                                    </p>
-
-                                    <p className="mb-2">
-                                        It provides a 
-                                        <span className="font-bold"> user-friendly interface</span> to help users track their mood, journal their thoughts, and explore relaxation techniques through a 
-                                        <span className="font-bold"> clean and intuitive interface</span> designed in 
-                                        <span className="font-bold"> Figma</span>.
+                                        <b>Unwind </b> <br />
+                                        is a <b>mobile wellness app</b> built in <b>Kotlin</b> <br />
+                                        that helps users track their mood, journal, and relax <br />
+                                        through a <b>Figma-designed interface</b>.     
                                     </p>
 
                                     <a
-                                        href="https://github.com/karlav24/Unwind"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        href="/projects"
                                         className="text-terracota hover:underline font-medium"
                                     >
-                                        Explore More →
+                                        Explore My Projects →
                                     </a>
                                 </section>
                             </div>
@@ -137,27 +119,19 @@ function CardCarousel(){
 
                             {/* Back Side */}
                             <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white p-6 flex flex-col justify-center items-center text-center">
-                                <section className="text-sm text-gray-700">
+                                <section className="text-md leading-7 text-gray-700">
                                     <p className="mb-2">
-                                    
-                                        In my continuous journey to 
-                                        <span className="font-bold"> self-teach C++</span>, I built a
-                                        <span className="font-bold"> command-line based expense tracker</span> in C++ from scratch.
+                                    <b>C++ Expense Tracker </b> <br />
+                                    is a <b>CLI expense tracker</b> written in <b>C++</b> using <br />
+                                    object-oriented principles, file I/O,
+                                    custom data structures, and STL containers.
                                     </p>
 
-
-                                    <p className="mb-2">
-                                        It enables users to log, categorize, and summarize personal expenses, utilizing 
-                                        <span className="font-bold"> object-oriented principles, file I/O with streams for data persistance, custom data structures, and STL containers </span>
-                                        to simulate core backend functionalities in a resource-constrained environment.
-                                    </p>
                                     <a
-                                        href="https://github.com/onyxisonit/ExpenseTrackerCpp"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        href="/projects"
                                         className="text-terracota hover:underline font-medium"
                                     >
-                                        Explore More →
+                                        Explore My Projects →
                                     </a>
                                 </section>
                             </div>
@@ -182,31 +156,19 @@ function CardCarousel(){
 
                             {/* Back Side */}
                             <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white p-6 flex flex-col justify-center items-center text-center">
-                                <section className="text-sm text-gray-700">
+                                <section className="text-md leading-7 text-gray-700">
                                     <p className="mb-2">
-                                        <span className="font-bold">Foodlib </span>
-                                        a full-stack nutrition web application in  
-                                        <span className="font-bold"> Python</span> that allows users to
-                                        <span className="font-bold"> search for nutritional information</span> on a wide range of food items, 
-                                        <span className="font-bold"> generate recipies based on ingredients</span> they have on hand,
-                                        <span className="font-bold"> and save their favorite recipes</span> for future reference!
-                                    </p>
-                                    
-                                    <p className="mb-2">
-                                        It features
-                                        <span className="font-bold"> user authentication via Google, CRUD functionality, and dynamic filtering</span> bootstrapped with
-                                        <span className="font-bold"> React</span> for the frontend and
-                                        <span className="font-bold"> Python</span> and
-                                        <span className="font-bold"> Flask</span>  in the backend.
+                                        <b>Foodlib </b> <br />
+                                        is a <b>nutrition web app</b> using <b>React</b> and <b>Flask</b> that <br />
+                                        lets users search nutritional info,
+                                        generate recipes from ingredients, and save favorites.
                                     </p>
 
                                     <a
-                                        href="https://github.com/karlav24/Unwind"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        href="/projects"
                                         className="text-terracota hover:underline font-medium"
                                     >
-                                        Explore More →
+                                        Explore My Projects →
                                     </a>
                                 </section>
                             </div>

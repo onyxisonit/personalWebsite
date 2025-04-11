@@ -7,19 +7,16 @@ function CardGridProjects() {
             link: "https://github.com/BU-Spark/ds-livable-streets-infra/tree/team-c-final",
             desc: (
                 <>
-                    is an extensive <b>data analysis pipeline</b> to investigate key drivers of
-                    <b> displacement trends </b> in Greater Boston for{" "}
-                    <a
-                        href="https://www.livablestreets.info"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline font-medium"
-                    >
-                        LivableStreets Alliance
-                    </a>. <br />
+                    is an extensive 
+                    <b> data analysis pipeline </b> 
+                    to investigate key drivers of
+                    <b> displacement trends </b>
+                    in the Greater Boston area for the nonprofit organization 
+                    <a href="https://www.livablestreets.info" target="_blank" className=" hover:underline font-medium"> LivableStreets Alliance. </a>
+                    
+                    <br />
                     It uses <b>machine learning</b> and <b>geospatial techniques</b> in{" "}
                     <b>Python</b> with libraries like <b>numpy, pandas, geopandas, scikit-learn</b>, and <b>matplotlib</b>.
-                    
                 </>
             ),
         },
@@ -30,8 +27,12 @@ function CardGridProjects() {
             link: "https://github.com/karlav24/Unwind",
             desc: (
                 <>
-                    is a <b>mobile wellness app</b> built in <b>Kotlin</b> that helps users track their mood, journal, and
-                    relax through a <b>Figma-designed interface</b>.
+                    is a mobile wellness app designed with a focus on mindfulness and relaxation in 
+                    <b> Kotlin</b>. <br />
+                    It provides a 
+                    <b> user-friendly interface</b> to help users track their mood, journal their thoughts, and explore relaxation techniques through a 
+                    <b> clean and intuitive interface</b> designed in 
+                    <b> Figma</b>.
                 </>
             ),
         },
@@ -42,8 +43,15 @@ function CardGridProjects() {
             link: "https://github.com/onyxisonit/ExpenseTrackerCpp",
             desc: (
                 <>
-                    is a <b>CLI expense tracker</b> written in <b>C++</b> using object-oriented principles, file I/O,
-                    custom data structures, and STL containers.
+                    
+                    is a <b> command-line interface based expense tracker</b>.
+                    In my continuous journey to 
+                    <b> self-teach C++</b>, I built a
+                    this CLI application in pure C++ from scratch. <br />
+                    It enables users to log, categorize, and summarize personal expenses, utilizing 
+                    <b> object-oriented principles, file I/O with streams for data persistance, custom data structures, and STL containers </b>
+                    to simulate core backend functionalities in a resource-constrained environment.
+                                    
                 </>
             ),
         },
@@ -54,8 +62,16 @@ function CardGridProjects() {
             link: "https://github.com/karlav24/Unwind",
             desc: (
                 <>
-                    is a <b>nutrition web app</b> using <b>React</b> and <b>Flask</b> that lets users search nutritional info,
-                    generate recipes from ingredients, and save favorites.
+                    is a full-stack nutrition web application in  
+                    <b> Python</b> that allows users to <br />
+                    <b> search for nutritional information</b> on a wide range of food items, 
+                    <b> generate recipies based on ingredients</b> they have on hand,
+                    <b> and save their favorite recipes</b> for future reference! <br />
+                    It features
+                    <b> user authentication via Google, CRUD functionality, and dynamic filtering</b> bootstrapped with
+                    <b> React</b> for the frontend and
+                    <b> Python</b> and
+                    <b> Flask</b>  in the backend.
                 </>
             ),
         },
@@ -64,18 +80,18 @@ function CardGridProjects() {
     return (
         <section>
            
-            <div className="w-full px-6">
+            <div className="w-full p-16">
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-4">
+                <div className="flex flex-col gap-12">
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="group w-full aspect-[3/4] bg-white relative overflow-hidden shadow-md"
+                            className="group w-full h-[500px] bg-white relative overflow-hidden shadow-md"
                         >
                             <div className="transition-transform duration-500 group-hover:rotate-y-180 transform-style-preserve-3d w-full h-full relative">
 
                                 {/* Front Side*/}
-                                <div className="absolute inset-0 backface-hidden p-4 flex flex-col items-center justify-center">
+                                <div className="absolute inset-0 backface-hidden p-4 flex items-center justify-center">
                                    
                                     <img
                                         src={project.img}
