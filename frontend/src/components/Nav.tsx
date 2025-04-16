@@ -6,7 +6,7 @@ function Nav() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full h-16 bg-plum text-white font-display shadow-md">
+    <nav className="fixed w-full h-16 bg-plum text-white font-display shadow-md z-10">
       <div className="flex items-center justify-between p-4">
         <div className="text-2xl font-bold">NYX</div>
         <div className="hidden md:flex space-x-4">

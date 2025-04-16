@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import { useState } from 'react'
+
 
 import './App.css'
 import './index.css'
@@ -13,7 +13,7 @@ function App() {
     <>
     
       <Router>
-        <div className="App scroll-smooth">
+        <div className="h-screen overflow-y-scroll bg-plum scroll-smooth">
           <Nav />
           <AnimatedRoutes />
           <Footer />
