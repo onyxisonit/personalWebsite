@@ -13,7 +13,7 @@ function App() {
     <>
     
       <Router>
-        <div className="h-screen overflow-y-scroll bg-plum scroll-smooth">
+        <div className="h-screen overflow-y-scroll bg-dutchWhite text-darkBrown scroll-smooth">
           <Nav />
           <AnimatedRoutes />
           <Footer />

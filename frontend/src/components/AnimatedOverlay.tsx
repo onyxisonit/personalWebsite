@@ -20,21 +20,16 @@ const overlayVariants = {
       transition: {
         duration: 1,
         ease: [0.3, 0.8, 0.3, 1],
-      },
-      transitionEnd:{
-        y: 0
       }
     },
     exit: {
       scale: 0,
       x: "-50%", 
       y: "50%",
-      // originX: 0,
-      // originY: 1,
       transition: {
         duration: 1,
         ease: "easeInOut",
-      },
+      }
     },
   };
   
@@ -52,7 +47,7 @@ function AnimatedPage() {
     return (
       <>
         <motion.p 
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl z-30"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white z-30"
           variants={overlayVariants}
           initial= {{
             scale: 0,
@@ -60,15 +55,14 @@ function AnimatedPage() {
             transition: {
               duration: 1,
               ease: [0, 1, 0.3, 1],
+              delay: 0.5
             }
           }}
           animate="animate"
-          exit="exit"
-          
-        >{routes[currentRoute]}</motion.p>
+          exit="exit">{routes[currentRoute]}</motion.p>
 
-        <motion.div
-        className="fixed inset-0 z-20 bg-plum pointer-events-none"
+      <motion.div
+        className="fixed inset-0 z-20 bg-burntOrange pointer-events-none"
         variants={overlayVariants}
         initial="initial"
         animate="animate"

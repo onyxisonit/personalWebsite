@@ -17,7 +17,6 @@ function AnimatedRoutes() {
 
     useEffect(() => {
         if (location.pathname !== displayedPath) {
-            // Trigger overlay animation
             setShowOverlay(true);
       
       const timeout = setTimeout(() => {
@@ -36,12 +35,11 @@ function AnimatedRoutes() {
             </AnimatePresence>  
 
             <AnimatePresence mode="wait">  
-                
                 <Routes location={{ ...location, pathname: displayedPath }} key={displayedPath}>
-                    <Route path="/" element={<Fade><Home /></Fade>} />
-                    <Route path="/about" element={<Fade><About /></Fade>} />
-                    <Route path="/projects" element={<Fade><Projects /></Fade>} />
-                    <Route path="/contact" element={<Fade><Contact /></Fade>} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
                 </Routes>
             </AnimatePresence>
         </>

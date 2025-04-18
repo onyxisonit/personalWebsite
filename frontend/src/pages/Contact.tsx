@@ -56,7 +56,7 @@ function Contact(){
       className="validator border-t border-0 focus:outline-none focus:border-blue-500 px-2 py-2 w-full"
       required
     />
-     <div className="validator-hint hidden">Please enter valid email address.</div>
+     <div className="validator-hint text-dutchWhite hidden">Please enter valid email address.</div>
   </div>
  
 

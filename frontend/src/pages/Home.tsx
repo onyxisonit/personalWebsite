@@ -2,11 +2,11 @@ import CardCarouselProjects from "../components/CardCarouselProjects.tsx";
 
 function Home(){
     return(
-        <div className="bg-terracotaLight text-white">
+        <div className="text-darkBrown">
             <section className="min-h-screen flex items-center justify-center">
                 <h1 className="text-4xl">Welcome to My Portfolio</h1>
             </section>
-            <div className="py-10">
+            <div >
                 <h1 className="flex items-center justify-center font-display font-bold text-3xl">Projects</h1>
     
                 <p className="max-w-3xl mx-auto text-base/7 text-center py-10">
