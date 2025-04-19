@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
     return (
-      <footer className="bg-darkBrown text-dutchWhite px-16 py-6 space-y-6">
+      <footer className="bg-darkBrown text-dutchWhite px-16 py-6 space-y-4">
 
         <section className="flex flex-col lg:flex-row justify-between text-left pt-12 gap-12">
           <div>
@@ -10,9 +10,9 @@ function Footer() {
           </div>
         </section>
 
-        <div className="inline-flex items-center justify-center w-full">     
+        <div className="inline-flex items-center justify-center w-full py-8">     
           <div className="h-[1px] bg-white w-[90%]" />
-            <button className="bg-terracotaLight text-white rounded-full px-8 py-4 lg:text-lg font-semibold hover:scale-105 hover:bg-burntOrange transition">
+            <button className="bg-terracotaLight text-white rounded-full px-8 py-5 lg:text-lg font-semibold hover:scale-105 hover:bg-burntOrange transition">
               <a href="/contact">Get in touch</a>
             </button>
           <div className="h-[1px] bg-white w-[10%]" />       

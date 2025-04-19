@@ -3,7 +3,8 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Projects from "../pages/Projects";
 import AnimatedOverlay from "./AnimatedOverlay";
-import Fade from "./Fade"
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -11,6 +12,7 @@ import { useState, useEffect } from "react";
 
 function AnimatedRoutes() {
     const location = useLocation();
+    const isContactPage = location.pathname === "/contact";
 
     const [displayedPath, setDisplayedPath] = useState(location.pathname);
     const [showOverlay, setShowOverlay] = useState(false);
@@ -29,7 +31,7 @@ function AnimatedRoutes() {
   
     return (
         <>
-
+            <Nav currentRoute={displayedPath} />
             <AnimatePresence mode="wait">
                 {showOverlay && <AnimatedOverlay key={location.pathname + "-overlay"} />}
             </AnimatePresence>  
@@ -42,6 +44,7 @@ function AnimatedRoutes() {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </AnimatePresence>
+            {!isContactPage && <Footer />}
         </>
     );
 }
