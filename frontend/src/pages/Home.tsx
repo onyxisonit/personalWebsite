@@ -4,7 +4,7 @@ function Home(){
     return(
         <div className="text-darkBrown">
             <section className="min-h-screen flex items-center justify-center">
-                <h1 className="text-4xl">Welcome to My Portfolio</h1>
+                <h1 className="text-4xl text-center">Welcome to My Portfolio</h1>
             </section>
             <div >
                 <h1 className="flex items-center justify-center font-display font-bold text-3xl">Projects</h1>

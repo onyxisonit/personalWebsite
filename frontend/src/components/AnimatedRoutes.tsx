@@ -2,9 +2,11 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Projects from "../pages/Projects";
+import ThankYou from '../pages/ThankYou';
 import AnimatedOverlay from "./AnimatedOverlay";
 import Nav from "./Nav";
 import Footer from "./Footer";
+
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -13,6 +15,7 @@ import { useState, useEffect } from "react";
 function AnimatedRoutes() {
     const location = useLocation();
     const isContactPage = location.pathname === "/contact";
+    const isThankYouPage = location.pathname === "/thankyou";
 
     const [displayedPath, setDisplayedPath] = useState(location.pathname);
     const [showOverlay, setShowOverlay] = useState(false);
@@ -31,7 +34,7 @@ function AnimatedRoutes() {
   
     return (
         <>
-            <Nav currentRoute={displayedPath} />
+        <Nav currentRoute={displayedPath} />
             <AnimatePresence mode="wait">
                 {showOverlay && <AnimatedOverlay key={location.pathname + "-overlay"} />}
             </AnimatePresence>  
@@ -42,9 +45,10 @@ function AnimatedRoutes() {
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/thankyou" element={<ThankYou />} />
                 </Routes>
             </AnimatePresence>
-            {!isContactPage && <Footer />}
+            {!isContactPage && !isThankYouPage && <Footer />}
         </>
     );
 }

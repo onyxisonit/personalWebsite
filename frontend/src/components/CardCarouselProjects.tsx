@@ -179,10 +179,10 @@ function CardCarousel(){
             </div>
 
             <div className="flex w-full justify-center gap-2 pt-2 pb-8">
-                <button onClick={() => scrollToProject(0)} className="btn btn-xs bg-darkBrown ">1</button>
-                <button onClick={() => scrollToProject(1)} className="btn btn-xs bg-darkBrown ">2</button>
-                <button onClick={() => scrollToProject(2)} className="btn btn-xs bg-darkBrown ">3</button>
-                <button onClick={() => scrollToProject(3)} className="btn btn-xs bg-darkBrown ">4</button>
+                <button onClick={() => scrollToProject(0)} className="btn btn-xs bg-darkBrown text-white">1</button>
+                <button onClick={() => scrollToProject(1)} className="btn btn-xs bg-darkBrown  text-white">2</button>
+                <button onClick={() => scrollToProject(2)} className="btn btn-xs bg-darkBrown  text-white">3</button>
+                <button onClick={() => scrollToProject(3)} className="btn btn-xs bg-darkBrown  text-white">4</button>
             </div>
 
         </div>
