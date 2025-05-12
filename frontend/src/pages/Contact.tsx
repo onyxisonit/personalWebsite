@@ -1,9 +1,20 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+//import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import axios, { AxiosResponse, AxiosError } from 'axios';
 
 
-
+/*************  ✨ Windsurf Command ⭐  *************/
+  /**
+   * Page for users to send a message to Nyx.
+   * 
+   * Contains a form with name, email, and message fields.
+   * When the form is submitted, the form data is sent to the server.
+   * If the response is successful, the user is redirected to the Thank You page.
+   * If the response is an error, an error message is displayed.
+   * 
+   * @returns The Contact page component.
+   */
 function Contact(){
   const navigate = useNavigate();
   const [contact, setContact] = useState(
@@ -13,6 +24,8 @@ function Contact(){
       message: ''
     }
   );
+  //Status of while message is being sent
+  const [status, setStatus] = useState('Send Message');
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setContact({...contact, [event.target.name]: event.target.value});
@@ -20,16 +33,25 @@ function Contact(){
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    console.log(contact);
+    setStatus('Sending...');
 
-    setContact({
-      name: '',
-      email: '',
-      message: '',
+    axios.post('http://localhost:5005/contact', contact)
+    .then((res: AxiosResponse<{message: string}>) => {
+      console.log(res.data.message);
+      setContact({
+        name: '',
+        email: '',
+        message: '',
+      });
+      setStatus('Send Message');
+      navigate('/thankyou');
+    })
+    .catch((err: AxiosError<{error: string}>) => {
+      console.error(err.response?.data.error || "Something went wrong.");
+      alert("Failed to send message. Please try again.");
     });
-
-    navigate('/thankyou');
   }
+
   return(
     <div className="min-h-screen bg-terracotaLight text-white px-16 py-6">
       <header className=" flex items-center justify-center font-display py-12 mt-14 mx-4 sm:mx-auto">
@@ -42,24 +64,6 @@ function Contact(){
         <a href="">Email</a> 
       </div>
 
-            {/* input contact form */}
-            {/* please see dqaisyUI/w3 if you want to add SVG! */}
-            {/* <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <label className="input block text-gray-700 text-sm mb-2">
-                    <input type="text" placeholder="Name" required/> 
-                </label>
-            
-                
-                <label className="input validator block text-gray-700 text-sm mb-2">
-                    <input type="email" placeholder="Email" required/>
-                </label>
-
-                <div className="validator-hint hidden">Please enter valid email address.</div>
-
-                <label className="input block text-gray-700 text-sm p-40 mb-2">
-                    <input type="text" placeholder="Message" required/>
-                </label>
-            </form> */}
       <form 
         onSubmit={handleSubmit} 
         className="rounded px-12 pt-6 pb-8 mb-4 space-y-4">
@@ -114,7 +118,7 @@ function Contact(){
 
         {/* Submit Button */}
         <div className="form-control mt-6">
-          <button className="btn btn-wine w-full">Send Message</button>
+          <button className="btn btn-wine w-full">{status}</button>
         </div>
         
       </form>
