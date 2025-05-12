@@ -1,5 +1,4 @@
 import { easeInOut, motion} from 'framer-motion';
-import { useEffect } from "react";
 
 function Fade({children}: {children: React.ReactNode}) {
       

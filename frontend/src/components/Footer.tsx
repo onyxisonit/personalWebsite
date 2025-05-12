@@ -20,7 +20,7 @@ function Footer() {
 
         <div className="flex flex-wrap justify-center lg:justify-start text-center"> 
           <button className="border text-white rounded-full px-8 py-4 lg:text-lg hover:scale-105 hover:bg-burntOrange transition">
-              <a href="mailto:onyxisonit@gmail.com">onyxisonit@gmail.com</a>
+              <a href="mailto:onyxisonit1@gmail.com">onyxisonit1@gmail.com</a>
           </button>
         </div>
         
